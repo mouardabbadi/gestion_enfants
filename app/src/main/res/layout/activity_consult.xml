@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultActivity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:padding="20dp"
+            android:text="Consultation"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_x="370dp"
+            android:layout_y="22dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personnel"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="4dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/absoluteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/primary"
+            android:elevation="40dp"
+            android:paddingLeft="20dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Information personelle"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_x="340dp"
+                android:layout_y="-1dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="366dp"
+            android:layout_height="310dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/absoluteLayout">
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/typecon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="125dp"
+                    android:layout_y="193dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text=""
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/genreconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="62dp"
+                    android:layout_y="222dp"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/lieuconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="142dp"
+                    android:layout_y="250dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Pére"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/douarconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="62dp"
+                    android:layout_y="280dp"
+                    android:text="Pére"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="8dp"
+                    android:layout_y="192dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Type de parent :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/sdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="8dp"
+                    android:layout_y="223dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Genre :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/genreconsult2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="7dp"
+                    android:layout_y="250dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Lieu de naissence :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/genreconsult3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="7dp"
+                    android:layout_y="279dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Douar :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/genreconsult4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="7dp"
+                    android:layout_y="279dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Douar :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="8dp"
+                    android:layout_y="160dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="N°Télephone :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="8dp"
+                    android:layout_y="131dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="CIN Tuteur :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="8dp"
+                    android:layout_y="102dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Tuteur :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="9dp"
+                    android:layout_y="72dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Date de naissence :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="11dp"
+                    android:layout_y="44dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Prénom :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="9dp"
+                    android:layout_y="14dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Nom :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/nomconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="54dp"
+                    android:layout_y="14dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Abbadi"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/prenomconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="73dp"
+                    android:layout_y="43dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Mourad"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/dateconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="148dp"
+                    android:layout_y="71dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="29/03/1998"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/tutrconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="62dp"
+                    android:layout_y="103dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Kouider Abbadi"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/cincon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="91dp"
+                    android:layout_y="131dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="F56985122"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/telcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="105dp"
+                    android:layout_y="161dp"
+                    android:text="+212 6 54 13 72 02"
+                    android:textColor="@color/primary" />
+            </AbsoluteLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="366dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="11dp"
+                    android:layout_y="25dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Section :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="207dp"
+                    android:layout_y="25dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Massar :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="10dp"
+                    android:layout_y="54dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Classe :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="9dp"
+                    android:layout_y="83dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Année Scolaire :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="11dp"
+                    android:layout_y="110dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Date d'entrée :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="206dp"
+                    android:layout_y="54dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Besoin :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="204dp"
+                    android:layout_y="83dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="D Depart :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/motficonsul"
+                    android:layout_width="296dp"
+                    android:layout_height="103dp"
+                    android:layout_x="55dp"
+                    android:layout_y="135dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="12dp"
+                    android:layout_y="134dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Motif :"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/classeconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="71dp"
+                    android:layout_y="54dp"
+                    android:text=" "
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/anneconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="122dp"
+                    android:layout_y="83dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="00/00/0000"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/departcosult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="275dp"
+                    android:layout_y="83dp"
+                    android:text="00/00/0000"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/entreconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="115dp"
+                    android:layout_y="110dp"
+                    android:text=""
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/sectionconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="71dp"
+                    android:layout_y="25dp"
+                    android:text=""
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/masarconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="269dp"
+                    android:layout_y="26dp"
+                    android:text=""
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/besoinconsult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="261dp"
+                    android:layout_y="55dp"
+                    android:text=""
+                    android:textColor="@color/primary" />
+            </AbsoluteLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

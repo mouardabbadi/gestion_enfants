@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fmps" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fmps"
+        android:label="Gestion Des Enfants-FMPS"
+        android:roundIcon="@drawable/fmps"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar" >
+
+        <activity
+            android:name=".ModifierActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnfanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenueActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+            <activity
+                android:name=".SplashAcivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
