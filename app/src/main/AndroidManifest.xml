@@ -11,25 +11,25 @@
         android:theme="@style/Theme.Design.Light.NoActionBar" >
 
         <activity
-            android:name=".ModifierActivity"
+            android:name=".Modal.ModifierActivity"
             android:exported="false" />
         <activity
-            android:name=".ConsultActivity"
+            android:name=".Modal.ConsultActivity"
             android:exported="false" />
         <activity
-            android:name=".EnfanActivity"
+            android:name=".Modal.EnfanActivity"
             android:exported="false" />
         <activity
-            android:name=".ListeActivity"
+            android:name=".Modal.ListeActivity"
             android:exported="false" />
         <activity
-            android:name=".MenueActivity"
+            android:name=".Modal.MenueActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Modal.MainActivity"
             android:exported="true"/>
             <activity
-                android:name=".SplashAcivity"
+                android:name=".Modal.SplashAcivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

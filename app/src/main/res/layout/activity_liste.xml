@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context=".ListeActivity">
+    tools:context=".Modal.ListeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/abslay"
@@ -140,9 +140,9 @@
             android:id="@+id/toggle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/ic_burger"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_baseline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
