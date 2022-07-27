@@ -1,4 +1,4 @@
-package com.example.fmps;
+package com.example.fmps.Services;
 
 import static java.security.AccessController.getContext;
 
@@ -18,7 +18,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-class Dbconn extends SQLiteOpenHelper {
+import com.example.fmps.Etudiant;
+
+public class Dbconn extends SQLiteOpenHelper {
     private Context context;
     public static final String Database = "Enfante.db";
 

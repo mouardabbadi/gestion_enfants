@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/back"
-    tools:context=".ModifierActivity">
+    tools:context=".Modal.ModifierActivity">
     <AbsoluteLayout
         android:id="@+id/header"
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.example.fmps;
+package com.example.fmps.Modal;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -25,6 +25,9 @@ import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.fmps.Etudiant;
+import com.example.fmps.R;
+import com.example.fmps.Services.Dbconn;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.example.fmps;
+package com.example.fmps.Modal;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.fmps.Etudiant;
+import com.example.fmps.R;
 
 public class ConsultActivity extends AppCompatActivity {
         private ConstraintLayout personell ;

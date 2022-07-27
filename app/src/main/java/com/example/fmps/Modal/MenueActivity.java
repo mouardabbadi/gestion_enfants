@@ -1,12 +1,8 @@
-package com.example.fmps;
+package com.example.fmps.Modal;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.core.view.WindowInsetsControllerCompat;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,6 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.fmps.R;
+import com.example.fmps.Services.Dbconn;
 
 public class MenueActivity extends AppCompatActivity {
     private Button voir,deconnecter;
