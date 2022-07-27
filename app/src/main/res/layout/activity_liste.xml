@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".ListeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/abslay"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/closeenfant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="14dp"
+            android:layout_x="359dp"
+            android:layout_y="15dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="243dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="CHERCHER UN ENFANT "
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="382dp"
+            android:layout_height="179dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/groubbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/txtchercher"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="73dp"
+                android:layout_marginEnd="23dp"
+                android:layout_x="30dp"
+                android:layout_y="209dp"
+                android:background="@drawable/text_chercher"
+                android:drawableLeft="@drawable/ic_baseline_filter_alt_24"
+                android:drawablePadding="10dp"
+                android:elevation="4dp"
+                android:hint="@string/chercher"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/filtreclasse"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="23dp"
+                android:layout_x="29dp"
+                android:layout_y="154dp"
+                android:elevation="4dp"
+                android:entries="@array/classs"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/chercherbtn"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="126dp"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/poppins_light"
+                android:text="Chercher"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="219dp"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/secondary"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Synchronizé"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addeleve"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button"
+            android:text="Nouvelle Enfant"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_burger"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="208dp"
+            android:layout_marginTop="8dp"
+            android:layout_x="187dp"
+            android:layout_y="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="(2)"
+            android:textColor="@color/primary"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abslay"
+        app:layout_constraintVertical_bias="0.150">
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="67dp"
+            android:layout_y="331dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Chercher D'abord"
+            android:textSize="30dp" />
+
+        <ListView
+            android:id="@+id/listeitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item">
+
+        </ListView>
+
+    </AbsoluteLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

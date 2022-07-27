@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FMPS</string>
+    <string name="chercher">Chercher</string>
+    <string name="se_connecter">Se Connecter</string>
+    <string name="sychronise">Sychronise</string>
+    <string name="copyright">LA FONDATION MAROCAINE POUR LA PROMOTION DE L’ENSEIGNEMENT PRÉSCOLAIRE</string>
+    <string name="ajouter_un_enfant">Ajouter un Enfant</string>
+
+    <string-array name="country_array">
+        <item>Feminin</item>
+        <item>Masculin</item>
+    </string-array>
+
+    <string-array name="filtre">
+        <item>Nom</item>
+        <item>Douar</item>
+        <item>Cin</item>
+        <item>Genre</item>
+        <item>Type de parente</item>
+        <item>Classe</item>
+        <item>Section</item>
+    </string-array>
+
+
+    <string-array name="classs">
+        <item>Tous</item>
+        <item>Classe 1</item>
+        <item>Classe 2</item>
+    </string-array>
+    <string-array name="type">
+        <item>Pére</item>
+        <item>Mére</item>
+    </string-array>
+
+    <string-array name="section">
+        <item>Petit Section</item>
+        <item>Moyen Section</item>
+    </string-array>
+
+    <string-array name="besoin">
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+</resources>

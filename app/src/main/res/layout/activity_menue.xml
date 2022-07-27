@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    tools:context=".MenueActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="374dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="@color/white"
+        android:elevation="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/voir"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_x="260dp"
+                android:layout_y="91dp"
+                android:background="@drawable/buttonsychronise"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Voir Tous"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="20dp"
+                android:layout_y="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Nombre des Eleves"
+                android:textColor="@color/primary"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="20dp"
+                android:layout_y="59dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="50"
+                android:textColor="@color/primary"
+                android:textSize="50dp" />
+
+        </AbsoluteLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="366dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="319dp"
+        android:layout_marginEnd="16dp"
+        android:layout_x="96dp"
+        android:layout_y="2dp"
+        android:alpha=".35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fmps" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardinscripton"
+        android:layout_width="374dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="200dp"
+        android:elevation="20dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="76dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="37dp"
+                android:src="@drawable/ic_baseline_people_alt_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="96dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="INSCRIPTIONS"
+                android:textColor="@color/primary"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deconnecter"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#D5183D"
+        android:fontFamily="@font/poppins_light"
+        android:text="Deconnecter"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
